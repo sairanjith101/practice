@@ -1,5 +1,3 @@
-
-
 class Solution:
     def seriesSum(self, n : int) -> int:
         output = 0
