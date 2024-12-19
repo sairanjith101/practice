@@ -1,16 +1,11 @@
-arr = [15, 2, 45, 4, 7]
-arr = [1]
+import math
 
-class Solution:
-    # Function to find values in array equal to their indices
-    def valueEqualToIndex(self, arr):
-        output = []
+def lcm_and_gcd(a,b):
+    gcd = math.gcd(a,b)
+    lcm = (a*b) // gcd
+    return [lcm, gcd]
 
-        for i in range(len(arr)):
-            if arr[i] == i + 1:
-                output.append(i + 1)
+a = 5
+b = 10
 
-        return output
-    
-sol = Solution()
-print(sol.valueEqualToIndex(arr))
+print(lcm_and_gcd(a,b))
