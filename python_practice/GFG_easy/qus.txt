@@ -69,3 +69,52 @@ Explanation: 1^3 + 2^3 + 3^3 + 4^3 + 5^3 = 225
 Input: n = 7
 Output: 784
 Explanation: 1^3 + 2^3 + 3^3 + 4^3 + 5^3 + 6^3 + 7^3 = 784
+
+19.Factorial
+
+Given a positive integer, n. Find the factorial of n.
+
+Examples :
+
+Input: n = 5
+Output: 120
+Explanation: 5*4*3*2*1 = 120
+
+Input: n = 4
+Output: 24
+Explanation: 4*3*2*1 = 24 
+
+20. Count Squares
+
+Consider a sample space consisting of all perfect squares starting from 1, 4, 9 and so on.
+You are given a number n, you have to find the number of integers less than n in the sample space.
+
+Examples :
+
+Input: n = 9
+Output: 2
+Explanation: 1 and 4 are the only Perfect Squares less than 9. So, the Output is 2.
+
+Input: n = 3
+Output: 1
+Explanation: 1 is the only Perfect Square less than 3. So, the Output is 1.
+
+Input: n = 5
+Output: 2
+
+21. Searching a number
+
+Given an integer k and array arr.
+Your task is to return the position of the first occurrence of k in the given array and if element k is not present in the array then return -1.
+
+Note: 1-based indexing is followed here.
+
+Examples:
+
+Input: k = 16 , arr = [9, 7, 16, 16, 4]
+Output: 3
+Explanation: The value 16 is found in the given array at positions 3 and 4, with position 3 being the first occurrence.
+
+Input: k=98 , arr = [1, 22, 57, 47, 34, 18, 66]
+Output: -1
+Explanation: k = 98 isn't found in the given array. 
