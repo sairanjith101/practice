@@ -136,3 +136,92 @@ Explanation: There are less than three elements in the array, so the third large
 Input: arr[] = [5, 5, 5]
 Output: 5
 Explanation: In the array [5, 5, 5], the third largest element can be considered 5, as there are no other distinct elements.
+
+23.Sort The Array
+
+Given a random array arr of numbers, please return them in ascending sorted order. 
+
+Note: Use Inbuilt functions to Sort the given array
+
+Examples:
+
+Input: arr[] = [1, 5, 3, 2]
+Output: [1, 2, 3, 5]
+Explanation: After sorting array will be like [1, 2, 3, 5].
+
+Input: arr[] = [3, 1]
+Output: [1, 3]
+Explanation: After sorting array will be like [1, 3].
+
+Input: arr[] = [1, 2, 3]
+Output: [1, 2, 3]
+Explanation: It's already in expected form.
+
+24. Binary Array Sorting
+
+You are given a binary array arr[], where each element is either 0 or 1.
+Your task is to rearrange the array in increasing order in place (without using extra space).
+You do not need to return anything; simply modify the input array.
+
+Examples:
+
+Input: arr[] = [1, 0, 1, 1, 0]
+Output: [0, 0, 1, 1, 1]
+Explanation: After arranging the elements in increasing order, elements will be as 0 0 1 1 1.
+
+Input: arr[] = [1, 0, 1, 1, 1, 1, 1, 0, 0, 0]
+Output: [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+Explanation: After arranging the elements in increasing order, elements will be 0 0 0 0 1 1 1 1 1 1.
+
+Input: arr[] = [1, 1, 1, 1]
+Output: [1, 1, 1, 1]
+Explanation: Since the array already contains only 1s, no change is needed.
+
+25. First and Second Smallests
+
+Given an array, arr of integers, your task is to return the smallest and second smallest element in the array.
+If the smallest and second smallest do not exist, return -1.
+
+Examples:
+
+Input: arr[] = [2, 4, 3, 5, 6]
+Output: 2 3 
+Explanation: 2 and 3 are respectively the smallest and second smallest elements in the array.
+
+Input: arr[] = [1, 1, 1]
+Output: -1
+Explanation: Only element is 1 which is smallest, so there is no second smallest element.
+
+26. Sum Except First and Last
+
+You are given an array arr of numbers. Return the sum of all the elements except the first and last elements.
+
+Examples:
+
+Input: arr[] = [5, 24, 39, 60, 15, 28, 27, 40, 50, 90]
+Output: 283
+Explanation: The sum of all the elements except the first and last element is 283.
+
+Input: arr[] = [5, 10, 1, 11]
+Output: 11
+Explanation: The sum of all the elements except the first and last element is 11.
+
+Input: arr[] = [5, 10]
+Output: 0
+Explanation: The sum of all the elements except the first and last element is 0.
+
+27.Rotating an Array
+
+Given an array arr[]. The task is to rotate the array by d elements where d ≤ arr.size.
+
+Examples:
+
+Input: arr[] = [-1, -2, -3, 4, 5, 6, 7], d = 2
+Output: [-3, 4, 5, 6, 7, -1, -2]
+Explanation: 
+Rotate by 1: [-2, -3, 4, 5, 6, 7, -1]
+Rotate by 2: [-3, 4, 5, 6, 7, -1, -2]
+
+Input: arr[] = [1, 3, 4, 2], d = 3 
+Output: [2, 1, 3, 4]
+Explanation: After rotating the array three times, the first three elements shift one by one to the right.

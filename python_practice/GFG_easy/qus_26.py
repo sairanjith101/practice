@@ -1,3 +1,5 @@
+# Sum Except First and Last
+
 # arr = [5, 24, 39, 60, 15, 28, 27, 40, 50, 90]
 arr = [5, 10]
 
