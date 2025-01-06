@@ -1,8 +1,8 @@
 # Missing in Array
 
-# arr = [1, 2, 3, 5]
+arr = [1, 2, 3, 5]
 # arr = [8, 2, 4, 5, 3, 7, 1]
-arr = [1]
+# arr = [1]
 # arr = [2, 1]
 
 # option 1
