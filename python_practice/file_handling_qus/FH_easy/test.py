@@ -1,5 +1,6 @@
-# Open the file in read mode
-with open('newfile.txt', 'r') as file:
-    # Read and print the first line
-    first_line = file.readline()
-    print(first_line)
+with open('check.txt', 'r') as file:
+    lines = file.readlines()
+    if lines:
+        print(lines[-1].strip())
+    else:
+        print("file does not exists")

@@ -1,11 +1,7 @@
-n = int(input("Enter the number of lines to read: "))
+n = int(input("Enter a value: "))
 
-try:
-    with open('sample.txt', 'r') as file:
-        for i, line in enumerate(file):
-            if i < n:
-                print(line, end='')
-            else:
-                break
-except FileNotFoundError:
-    print('Flie does not exists')
+with open('newfile.txt', 'r') as file:
+    lines = file.readlines()
+    for i,value in enumerate(lines):
+        if i < n:
+            print(value, end='')
