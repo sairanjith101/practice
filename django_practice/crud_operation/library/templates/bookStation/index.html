@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Library</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Sai Library</h1>
+    <h2>Categories</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Category Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cat in category %}
+        <tr>
+          <td>{{cat.Cname}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2>Books</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Publication</th>
+          <th>PBN</th>
+          <th>Pages</th>
+          <td>Options</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for bk in book %}
+        <tr>
+          <td>{{bk.title}}</td>
+          <td>{{bk.author}}</td>
+          <td>{{bk.publication}}</td>
+          <td>{{bk.pbn}}</td>
+          <td>{{bk.pages}}</td>
+          <td>
+            <button type="button"><a href="#">Add</a></button>
+            <button type="button"><a href="#">Update</a></button>
+            <button type="button"><a href="#">Delete</a></button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
