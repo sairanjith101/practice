@@ -1,17 +1,12 @@
-# arr = [5, 24, 39, 60, 15, 28, 27, 40, 50, 90]
-arr = [5, 10]
+def decorator(func):
+    def wrapper():
+        print("Before the function runs")
+        func()
+        print("After the function runs")
+    return wrapper
 
+@decorator
+def say_hello():
+    print("Hello!")
 
-class Solution:
-    def sumExceptFirstLast(self,arr):
-        if len(arr) <= 2:
-            return 0
-        else:
-            new_arr = arr[1:-1]
-            output = 0
-            for i in new_arr:
-                output += i
-            return output
-
-sol = Solution()
-print(sol.sumExceptFirstLast(arr))
+say_hello()

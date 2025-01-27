@@ -1,5 +1,11 @@
+import re
+
 text = "Hello Gary Williams"
 
-new_text = text.split()
-print(new_text[1])
-print(new_text[2]) 
+regex = r'([\w]+)\s([\w]+)\s([\w]+)'
+
+match = re.finditer(regex, text)
+
+for m in match:
+    print(m.group(2))
+    print(m.group(3))

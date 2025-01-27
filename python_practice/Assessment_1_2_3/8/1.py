@@ -1,7 +1,6 @@
-with open('testFile.txt', 'r') as f:
-    lines = f.readlines()
-
-lines.sort()
-
-with open("sortedFile.txt", 'w') as f:
-    f.writelines(lines)
+with open('sample.txt', 'r') as file1:
+    with open('new.txt', 'w') as file2:
+        read_line = file1.readlines()
+        read_line.sort()
+        if read_line:
+            file2.writelines(read_line)
