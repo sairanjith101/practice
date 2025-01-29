@@ -1,12 +1,14 @@
-X = [
+import numpy as np
+
+arr = [
  [1,2,3,4],
  [5,6,7,8],
  [1,2,3,4],
  [5,6,7,8]
 ]
 
-matrix = [[X[column][row] for column in range(len(X))]
-          for row in range(len(X[0]))]
+numpy_arr = np.array(arr)
 
-for mat in matrix:
-    print(mat)
+transpose = numpy_arr.T
+
+print(transpose.tolist())

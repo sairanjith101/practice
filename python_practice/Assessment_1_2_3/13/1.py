@@ -1,8 +1,8 @@
 text = 'Gavs Technologies'
 
-char,index = input("Enter a char and Index value : ").split()
-index = int(index)
+char = input("Enter a Char: ")
+index = int(input("Enter a Index: "))
 
-text = text[:index] + char + text[index+1:]
+new_text = text[:index] + char + text[index+1:]
 
-print(text)
+print(new_text)

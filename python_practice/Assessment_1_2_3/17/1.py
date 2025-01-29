@@ -1,11 +1,11 @@
-arr = ('sun', 'mon', 'tue', 'sun', 'mon', 'tue', 'mon', 'tue', 'thu')
+arr = ['sun', 'mon', 'tue', 'sun', 'mon', 'tue', 'mon', 'tue', 'thu']
 
-dic = {}
+output = {}
 
-for word in arr:
-    if word in dic:
-        dic[word] += 1
+for i in arr:
+    if i not in output:
+        output[i] = 1
     else:
-        dic[word] = 1
+        output[i] += 1
 
-print(dic)
+print(output)

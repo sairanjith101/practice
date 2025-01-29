@@ -2,10 +2,11 @@ import math
 
 arr = [16, 6, 8, 4, 144]
 
-perfect_sqr = []
+output = []
 
-for num in arr:
-    if math.sqrt(num) == int(math.sqrt(num)):
-        perfect_sqr.append(num)
+for i in arr:
+    sqr_value = math.sqrt(i)
+    if i % sqr_value == 0:
+        output.append(i)
 
-print(perfect_sqr)
+print(output)

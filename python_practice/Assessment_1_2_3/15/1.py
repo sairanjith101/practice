@@ -1,11 +1,6 @@
-def compoundinterest(P,R,T):
-    formula = P*(1+(R/100))**T
-    return formula
+p = 1200
+t = 2
+r = 5.4
 
-P = float(input("Principle amount : "))
-R = float(input("Rate : "))
-T = float(input("Time : "))
-
-if __name__ == "__main__":
-    compint = compoundinterest(P,R,T)
-    print("Compound Inetrest : ", compint)
+ci = p*((1+(r/100))**t)
+print(ci)

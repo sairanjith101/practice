@@ -1,9 +1,5 @@
-def swapList(num):
-    #size = len(num)
+user = [12, 35, 9, 56, 24]
 
-    num[0], num[-1] = num[-1], num[0]
+user[0], user[-1] = user[-1], user[0]
 
-    return num
-
-num = [12, 35, 9, 56, 24]
-print(swapList(num))
+print(user)
