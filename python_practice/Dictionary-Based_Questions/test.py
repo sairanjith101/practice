@@ -1,13 +1,11 @@
-list_word = ['apple', 'banana', 'cherry', 'apricot']
+d = {'a': 1, 'b': 2, 'c': 3}
 
-dict = {}
+def reverse_dictionary(d: dict) -> dict:
+    reversed_dict = {}
 
-for word in list_word:
-    index_word = word[0:1]
-    if index_word == word[0]:
-        if index_word not in dict:
-            dict[index_word] += word
-        else:
-            dict[index_word] += word
+    for key,value in d.items():
+        reversed_dict[value] = key
+    
+    return reversed_dict
 
-print(dict)
+print(reverse_dictionary(d))
