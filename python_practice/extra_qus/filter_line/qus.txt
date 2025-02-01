@@ -1,0 +1,8 @@
+Question: Filter Lines Containing a Specific Word
+
+Tags: File Handling, String Manipulation
+
+Problem Statement:
+You are given a text file named "sample.txt", which contains multiple lines of text.
+Your task is to filter and write only those lines that contain the word "melon" (case-insensitive) to
+a new file named "newfile.txt".

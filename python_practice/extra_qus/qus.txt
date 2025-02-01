@@ -1,0 +1,24 @@
+Question 1: Find Perfect Squares in an Array
+
+input = arr = [-9, 25, -4, 36, 10]
+output = [25, 36]
+
+Question 2: Implement a Function to Add Two Numbers
+
+input = a = 4 , b = 4
+output =  8
+
+Question 3: Remove First Digit and Reverse the String
+
+input = Enter an alphanumeric value: abc1def
+Output: fedcba
+
+Question 4: Check If Two Strings Are Anagrams
+
+input: s = "anagram" , t = "nagaram"
+output =  True
+
+Question 5: Check Armstrong Numbers in a Given Range
+
+input = lower = 100, upper = 1000
+output = 153 370 371 407

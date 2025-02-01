@@ -1,0 +1,8 @@
+Question: Sort File Contents
+
+Tags: File Handling, String Manipulation
+
+Problem Statement:
+You are given a text file named "samplefile.txt", which contains multiple lines of text.
+Your task is to read the contents of this file, sort the lines in lexicographical order,
+and write the sorted lines to a new file named "newfile.txt".

@@ -67,3 +67,14 @@ print(findanagram(s, t))  # Output: True
 # t = "nagaram"
 
 # print(anagram_checker(s,t))
+
+# option 3
+'''def findqus(s,t):
+    s = sorted(s)
+    t = sorted(t)
+
+    if s == t:
+        return True
+    return False
+
+print(findqus(s,t))'''

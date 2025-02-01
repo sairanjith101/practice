@@ -1,21 +1,26 @@
-from abc import ABC, abstractmethod
+lower = 100
+upper = 1000
 
-class Animal:
-    @abstractmethod
-    def make_sound(self):
-        pass
+# lower = 1000
+# upper = 10000
 
-class Dog(Animal):
-    def make_sound(self):
-        return "WoW"
+# lower = 10000
+# upper = 100000
 
-class Cat(Animal):
-    def make_sound(self):
-        return "Meow"
+output = []
 
-animal = Animal()
-dog = Dog()
-cat = Cat()
+for i in range(lower,upper+1):
+    n = len(str(i))
 
-print(f'Dog Make Sound: ', {dog.make_sound()})
-print(f'Cat Make Sound: ', {cat.make_sound()})
+    split_num = list(str(i))
+
+    total = []
+    
+    for j in split_num:
+        mul_num = int(j) ** n
+        total.append(mul_num)
+    
+    if sum(total) == i:
+        output.append(i)
+
+print(output)
