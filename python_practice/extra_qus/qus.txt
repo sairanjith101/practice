@@ -22,3 +22,11 @@ Question 5: Check Armstrong Numbers in a Given Range
 
 input = lower = 100, upper = 1000
 output = 153 370 371 407
+
+Question 6: How does the function convert Fahrenheit to Celsius or Celsius to Fahrenheit ?
+
+# Input:
+c = 30
+f = 86
+
+output = find Celsius or Fahrenheit 
