@@ -1,19 +1,16 @@
-class SuperMarket:
+class rectangle:
 
-    name = "Sai Super Market"
-    location = "Trichy"
+    def __init__(self,length,width):
+        self.__length = length
+        self.__width = width
 
-    def __init__(self, customer):
-        self.customer = customer
+    def area(self):
+        return self.__length * self.__width
+    
+    def perimeter(self):
+        return 2 * (self.__length + self.__width)
+    
+obj = rectangle(2,4)
 
-    def items(self, product, product_quantity):
-        self.product = product
-        self.product_quantity = product_quantity
-        print(self.product)
-        print(self.product_quantity)
-
-obj = SuperMarket("Ranjith")
-print(obj.name)
-print(obj.location)
-print(obj.customer)
-obj.items("Milk", 1)
+print(obj.area())
+print(obj.perimeter())

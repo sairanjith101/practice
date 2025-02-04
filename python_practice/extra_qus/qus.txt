@@ -29,4 +29,18 @@ Question 6: How does the function convert Fahrenheit to Celsius or Celsius to Fa
 c = 30
 f = 86
 
-output = find Celsius or Fahrenheit 
+output = find Celsius or Fahrenheit
+
+Question 7: Word Frequency Counter
+
+Input :
+Enter a sentence: Hello world hello Python world
+Output:
+Counter({'hello': 2, 'world': 2, 'python': 1})
+
+Question 8: Abstract Animal Sounds
+
+output: Woof Meow
+
+
+
