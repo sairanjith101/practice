@@ -18,3 +18,17 @@ n = 98
 
 obj = Solution()
 print(obj.isDigitSumPalindrome(n))
+
+
+# option 2
+
+class Solution:
+    def findPalindrome(self,n):
+        reverse_num = n[::-1]
+        if reverse_num == n:
+            return 1
+        return 0
+
+n = (input("Enter a value: "))
+sol = Solution()
+print(sol.findPalindrome(n))
