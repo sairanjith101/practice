@@ -1,11 +1,11 @@
 class Solution:
-    def findFactors(self,n):
+    def findInt(self,arr):
         output = []
-        for i in range(1, n+1):
-            if n % i == 0:
+        for i in arr:
+            if type(i) == int:
                 output.append(i)
         return output
-    
-n = int(input("Enter a value: "))
+
+arr = [1, 2, 'a', 'b', '3', 'c', '4', 'd', 5]
 sol = Solution()
-print(sol.findFactors(n))
+print(sol.findInt(arr))

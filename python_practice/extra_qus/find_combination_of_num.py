@@ -1,20 +1,18 @@
 from itertools import combinations
 
-def findcombination(arr,total):
-    combination_num = combinations(arr, 2)
+arr = [4, 4, 5, 3]
+total = 8
 
-    output = 0
+comb = combinations(arr, 2)
 
-    for comb in combination_num:
-        if sum(comb) == total:
-            output += 1
-    return output
+output = 0
+valid_pairs = []  # Store valid pairs
 
-# arr = [4, 4, 5, 3]
-# total = 8
+for c in comb:
+    print(c)  # Print all pairs
+    if sum(c) == total:
+        output += 1
+        valid_pairs.append(c)  # Store valid pair
 
-arr = [-7, 1, 5, 1, 4]
-total = 6
-
-print(findcombination(arr,total))
-
+print("Total Pairs:", output)
+print("Valid Pairs:", valid_pairs)
