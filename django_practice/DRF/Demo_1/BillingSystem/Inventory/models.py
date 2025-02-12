@@ -6,3 +6,6 @@ class Products(models.Model):
     product_name = models.CharField(max_length=50)
     code = models.CharField(max_length=50)
     price = models.FloatField(default=0)
+
+    def __str__(self):
+        return self.product_name
