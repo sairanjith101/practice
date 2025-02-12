@@ -1,16 +1,15 @@
-import itertools
+from itertools import combinations
 
-nums = [10, 7, 11, 2]
+class Solution:
+    def findPOI(self, nums, target):
+        comb = combinations(range(len(nums)), 2)  # Generate index pairs
+        output = []
+        for i, j in comb:
+            if nums[i] + nums[j] == target:
+                output.append((i, j))  # Append the index pair
+        return output
+
+nums = [2, 7, 4, 5, 3]
 target = 9
-
-# Generate all combinations of indices
-combinations = itertools.combinations(range(len(nums)), 2)
-
-
-output = []
-
-for comb in combinations:
-    if nums[comb[0]] + nums[comb[1]] == target:
-        output.append(comb)
-
-print(output)
+sol = Solution()
+print(sol.findPOI(nums, target))
