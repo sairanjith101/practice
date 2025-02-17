@@ -35,3 +35,13 @@ class ProductsViewById(APIView):
             }
         
         return Response(single_product)
+
+    def patch(self, request, id):
+        product = Products.objects.filter(id = id)
+        product.update(product_name = request.data["product_name"], code = request.data["code"], price = request.data["price"])
+        return Response("Updated")
+
+    def delete(self, request, id):
+        product = Products.objects.get(id = id)
+        product.delete()
+        return Response("Deleted")
