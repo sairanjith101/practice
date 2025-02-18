@@ -2,7 +2,14 @@ from django.db import models
 
 # Create your models here.
 
+class Category(models.Model):
+    category_name = models.CharField(max_length=200, null=True)
+
+    def __str__(self):
+        return self.category_name
+
 class Products(models.Model):
+    category_reference = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
     product_name = models.CharField(max_length=50)
     code = models.CharField(max_length=50)
     price = models.FloatField(default=0)
