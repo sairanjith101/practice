@@ -1,27 +1,14 @@
-class vehicle:
+from collections import Counter
 
-    def __init__(self,brand,year):
-        self.brand = brand
-        self.year = year
+nums = [10, 20, 10, 20, 30, 10]
+new_num = Counter(nums)
 
-    def display(self):
-        print(self.brand)
-        print(self.year)
+max_num = max(new_num.values())
 
-class Truck(vehicle):
+most_freq_num = []
 
-    def __init__(self, brand, year, tank, load):
-        self.tank = tank
-        self.load = load
+for key,value in new_num.items():
+    if value == max_num:
+        most_freq_num.append(key)
 
-        vehicle.__init__(self,brand,year)
-
-    def details(self):
-        print(f'Brand: {self.brand}')
-        print(f'Year: {self.year}')
-        print(f'Tank: {self.tank}')
-        print(f'Load: {self.load}')
-
-obj = Truck('TATA', 2018, "20L", '200T')
-obj.display()
-obj.details()
+print(min(most_freq_num))
