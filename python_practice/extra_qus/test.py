@@ -1,14 +1,13 @@
-from collections import Counter
+def find_primes(lower: int, upper: int) -> list:
+    for num in range(lower, upper+1):
+        if num > 1:
+            for i in range(2, num):
+                if num % i == 0:
+                    break
+            else:
+                print(num)
 
-nums = [10, 20, 10, 20, 30, 10]
-new_num = Counter(nums)
+lower = 10  
+upper = 20
 
-max_num = max(new_num.values())
-
-most_freq_num = []
-
-for key,value in new_num.items():
-    if value == max_num:
-        most_freq_num.append(key)
-
-print(min(most_freq_num))
+find_primes(lower,upper)

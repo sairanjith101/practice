@@ -1,19 +1,10 @@
-# word = "radar"
-word = "hello"
+def is_palindrome(word: str) -> bool:
+    reverse_word = word[::-1]
+    if reverse_word == word:
+        return "True"
+    return "False"
 
-rev_word = word[::-1]
 
-if word == rev_word:
-    print(True)
-else:
-    print(False)
+word = "madam"
 
-def rev_word(word):
-    output = word[::-1]
-    if word == output:
-        print(True)
-    else:
-        print(False)
-
-rev_word("radar")
-    
+print(is_palindrome(word))
