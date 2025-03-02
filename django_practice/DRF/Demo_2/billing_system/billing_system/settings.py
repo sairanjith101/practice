@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&-6gnwvj^4duh7x_jv@!6*$&@obi$_4a@(#fe4-x##d0^&-#&+'
+SECRET_KEY = 'django-insecure-e1u=l!&72b!x&qna52550+%)qd%2r9^j#xvyp0ali!y#@e6-mh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'billing_system.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'BS_db',
+        'NAME': 'bs_db',
         'USER': 'root',
         'PASSWORD': '12345',
         'HOST': 'localhost',

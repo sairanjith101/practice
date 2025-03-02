@@ -20,5 +20,5 @@ from inventory import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inventory/', include("inventory.urls")),
+    path('inventory/', include('inventory.urls'))
 ]
