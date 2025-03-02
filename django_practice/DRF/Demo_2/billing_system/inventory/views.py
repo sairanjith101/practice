@@ -27,7 +27,7 @@ class ProductView(APIView):
     #     return Response(product_data)
 
     def post(self, request):
-        new_product = Products(product_name = request.data['product_name'], code = request.data['code'], price = request.data['price'])
+        new_product = Products(product_name = request.data['product_name'], code = request.data['code'], price = request.data['price'], category_reference_id = request.data['category_reference_id'])
         new_product.save()
         return Response("Data Saved")
     
@@ -60,3 +60,18 @@ class ProductViewById(APIView):
         product = Products.objects.get(id = id)
         product.delete()
         return Response("Deleted")
+
+class CategoryView(APIView):
+
+    def post(self, request):
+        new_category = Category(category_name = request.data['category_name'])
+        new_category.save()
+        return Response("Data Saved")
+    
+class CategoryViewById(APIView):
+
+    def delete(self, request, id):
+        category_data = Category.objects.get(id=id)
+        category_data.delete()
+        return Response("Deleted")
+    

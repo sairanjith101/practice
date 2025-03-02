@@ -10,3 +10,8 @@ class Product_Serializers2(serializers.ModelSerializer):
     class Meta:
         model = Products
         fields = ['product_name']
+
+class Category_Serializers(serializers.ModelSerializer):
+    class Meta:
+        models = Category
+        fields = '__all__'
