@@ -8,8 +8,6 @@ arr = [
 output = 0
 
 for i in range(len(arr)):
-    for j in range(len(arr)):
-        if i == j:
-            output += arr[i][j]
+    output += arr[i][i]
 
 print(output)
