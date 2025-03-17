@@ -1,7 +1,7 @@
-n = int(input("Enter a value: "))
+import csv
 
-with open('newfile.txt', 'r') as file:
-    lines = file.readlines()
-    for i,value in enumerate(lines):
-        if i < n:
-            print(value, end='')
+with open('finance.csv', 'r', newline='') as file1:
+    csv_reader = csv.DictReader(file1)
+
+    for row in csv_reader:
+        print(row)  # Each row is a dictionary
