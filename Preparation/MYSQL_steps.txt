@@ -1,0 +1,57 @@
+✅ 1. Database Basics
+✔️ Create a new database
+✔️ Delete a database
+✔️ Show available databases
+✔️ Use a specific database
+✔️ Show tables
+
+✅ 2. Table Operations
+✔️ Create a table
+✔️ Delete a table
+✔️ Modify a table (ALTER)
+✔️ Describe table structure
+
+✅ 3. Inserting Data
+✔️ Insert values into all columns
+✔️ Insert values into specific columns
+
+✅ 4. Querying Data (SELECT)
+✔️ Display all rows & columns
+✔️ Display specific columns
+✔️ Use WHERE to filter data
+
+✅ 5. WHERE Clause & Conditions
+✔️ =, >, <, AND, OR
+✔️ IN, NOT IN, BETWEEN, LIMIT
+
+✅ 6. LIKE (Pattern Matching)
+✔️ Starts with A
+✔️ Starts with R, ends with a
+✔️ Contains I
+✔️ Third character is i
+
+✅ 7. Updating & Deleting Data
+✔️ Update values
+✔️ Delete records
+
+✅ 8. DISTINCT (Remove Duplicates)
+✔️ Show unique values
+
+✅ 9. Sorting Data (ORDER BY)
+✔️ Ascending & Descending Order
+
+✅ 10. Joins (For Django & Flask ORM)
+✔️ INNER JOIN, LEFT JOIN, RIGHT JOIN
+
+✅ 11. Foreign Keys & Constraints (For Django Models)
+✔️ Foreign Key Relationships
+✔️ ON DELETE CASCADE
+
+✅ 12. GROUP BY & HAVING (For Aggregations)
+✔️ Grouping & filtering aggregated results
+
+✅ 13. Indexing (For Performance Optimization)
+✔️ Creating an index
+
+✅ 14. Working with Dates
+✔️ Store & filter date values
