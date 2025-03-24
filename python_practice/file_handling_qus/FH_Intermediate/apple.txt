@@ -1,4 +1,7 @@
 I love programming in Python.
+
 Web development is fun.
+
 Java is also popular.
+
 Python is versatile and powerful.

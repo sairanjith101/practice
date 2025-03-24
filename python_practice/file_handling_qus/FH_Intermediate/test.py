@@ -1,7 +1,11 @@
-import csv
+n = int(input("Enter a value: "))
 
-with open('finance.csv', 'r', newline='') as file1:
-    csv_reader = csv.DictReader(file1)
-
-    for row in csv_reader:
-        print(row)  # Each row is a dictionary
+try:
+    with open('sample.txt', 'r') as file1:
+        for i, line in enumerate(file1):
+            if i < n:
+                print(line, end='')
+            else:
+                break
+except FileNotFoundError:
+    print(f'File {file1} does not fount')
