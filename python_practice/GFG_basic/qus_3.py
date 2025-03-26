@@ -22,3 +22,20 @@ b = [11, 3, 7, 1, 7]
 
 sol = Solution()
 print(sol.isSubset(a,b))
+
+
+
+# Option 2
+
+class Solution:
+    def checksubset(self, a, b):
+        for i in b:
+            if i not in a:
+                return False
+        return True
+
+
+a=[11,7,13,21,3,7,3]
+b=[11,3,7,1,7]
+sol = Solution()
+print(sol.checksubset(a,b))
