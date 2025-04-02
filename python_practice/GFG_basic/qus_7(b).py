@@ -1,18 +1,15 @@
 class Solution:
-    # Function to reverse every sub-array group of size k.
     def reverseInGroups(self, arr, k):
         n = len(arr)
-        for i in range(0, n, k):
-            # Reverse each sub-array of size k
-            arr[i:i + k] = reversed(arr[i:i + k])
+        result = []
         
-        # Return the space-separated string
-        return arr
+        for i in range(0, n, k):
+            result.extend(reversed(arr[i:i + k]))  # Reverse each group and append to result
+            
+        return result 
 
-# Input
-k = 3
 arr = [1, 2, 3, 4, 5]
+k = 3
 
-# Create object and call the function
 sol = Solution()
 print(sol.reverseInGroups(arr, k))
