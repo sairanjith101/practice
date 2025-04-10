@@ -1,20 +1,13 @@
 class Solution:
-    def reverstring(self, arr, k):
-        box1 = []
-        box2 = []
-        for i in arr:
-            if arr[i] > k:
-                box1.append(i)
-            else:
-                box2.append(i)
-        box2.reverse()
-        box1.reverse()
-        result = list[box1, box2]
-        return result 
-
-
-arr = [1, 2, 3, 4, 5]
-k = 3
-
+    def isPrime(self, n: int) -> bool:
+        if n <= 1:
+            print("Enter a positive number")
+        
+        for i in range(2, n):
+            if n % i == 0:
+                return False
+        return True
+        
+n = int(input("Enter a value: "))
 sol = Solution()
-print(sol.reverstring(arr, k))
+print(sol.isPrime(n))
