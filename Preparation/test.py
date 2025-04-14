@@ -1,15 +1,22 @@
-dict1 = {'a': 1, 'b': 2, 'c': 3}
-dict2 = {'b': 3, 'c': 4, 'd': 5}
-
 class Solution:
-    def mergeddict(self,dict1,dict2):
-        merged = dict1.copy()
-        for key,value in dict2.items():
-            if key in merged:
-                merged[key] += value
-            else:
-                merged[key] = value
-        return merged
-    
+    def loginsystem(self):
+        username = input("Enter username: ")
+        password = input("Enter password: ")
+
+        if username in user_db and user_db[username] == password:
+            return "Login Successful"
+        else:
+            return "Invalid Username or Password."
+
+user_db = {}
+n = int(input("How many users do you want: "))
+
+for i in range(n):
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+    user_db[username] = password
+
+print("Database craeted ", user_db)
+
 sol = Solution()
-print(sol.mergeddict(dict1,dict2))
+print(sol.loginsystem())
