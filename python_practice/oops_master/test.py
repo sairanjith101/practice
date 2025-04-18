@@ -1,39 +1,30 @@
-class Product:
-    def __init__(self, name, price, quantity=1):
-        self.name = name
-        self.price = price
-        self.quantity = quantity
+class BankAccount:
 
-    def total_price(self):
-        return self.price * self.quantity
+    def __init__(self, account_number, initial_balance = 0):
+        self.__account_number = account_number
+        self.__balance = initial_balance
+
+    def Deposite(self, amount):
+        if self.__balance > amount:
+            self.__balance += amount
+            print(f'Deposite Rs.{amount}. New Balance Rs.{self.__balance}')
+        else:
+            print(f'Deposite amount must be positive')
     
-    def __str__(self):
-        return f"{self.name} - Rs.{self.price} x {self.quantity}"
+    def Withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+            print(f'Withdraw Rs.{amount}. New Balance Rs.{self.__balance}')
+
+    def get_account_number(self):
+        return self.__account_number
     
-class Order:
-    def __init__(self):
-        self.products = []
-
-    def add_product(self, product):
-        self.products.append(product)
-
-    def calculate_total(self):
-        return sum(product.total_price() for product in self.products)
+    def get_current_balance(self):
+        return self.__balance
     
-    def __str__(self):
-        product_list = "\n".join(str(product) for product in self.products)
-        total_cost = self.calculate_total()
-        return f"Order Details:\n{product_list}\nTotal Cost: Rs.{total_cost:.2f}"
-    
+bank = BankAccount("12345", 1000)
 
-if __name__ == "__main__":
-    product1 = Product(name="Laptop", price=2500, quantity=1)
-    product2 = Product(name="Mouse", price=400, quantity=1)
-    product3 = Product(name="Keyboard", price=250, quantity=1)
-
-    order = Order()
-    order.add_product(product1)
-    order.add_product(product2)
-    order.add_product(product3)
-
-    print(order)
+bank.Deposite(500)
+bank.Withdraw(300)
+print(bank.get_account_number())
+print(bank.get_current_balance())

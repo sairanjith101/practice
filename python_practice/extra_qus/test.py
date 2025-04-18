@@ -1,16 +1,9 @@
-arr = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [1, 2, 3, 4],
-    [5, 6, 7, 8]
-]
-
-output = []
-
-for i in range(len(arr)):
-    row = []
-    for j in range(len(arr)):
-        row.append(arr[j][i])
-    output.append(row)
-
-print(output)
+class Solution:
+    def factorialnum(self,n):
+        box = 1
+        for i in range(1, n+1):
+            box *= i
+        return box
+n = int(input("Enter a value: "))
+sol = Solution()
+print(sol.factorialnum(n))
