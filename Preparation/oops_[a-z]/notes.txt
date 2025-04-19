@@ -1,0 +1,3 @@
+Private -> same class only
+Protected -> same class + subclasses
+Public -> anywhere
